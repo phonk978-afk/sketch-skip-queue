@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sketch - Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to The Sketch Express</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Menu</a></li>
+                <li><a href="order.html">Pre-Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Demonstrating Box Model for Evaluation -->
+        <div class="box-model-demo">
+            <h2>Special of the Day</h2>
+            <!-- Image with 'alt' attribute as required -->
+            <img src="https://via.placeholder.com/150" alt="Delicious sketch burger meal promotion" class="promo-image">
+            <p>Try our signature Sketch Burger. It's the most popular item!</p>
+            
+            <!-- External link example using target="_blank" -->
+            <p>Read about healthy eating on <a href="https://en.wikipedia.org/wiki/Healthy_diet" target="_blank">Wikipedia</a>.</p>
+        </div>
+
+        <section class="menu-section">
+            <h2>Our Menu</h2>
+            <!-- HTML Table as required by syllabus -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Image</th>
+                        <th>Item Name</th>
+                        <th>Price (₹)</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- Images with 'alt' attribute -->
+                        <td><img src="https://via.placeholder.com/50" alt="Sketch Burger icon"></td>
+                        <td>Sketch Burger</td>
+                        <td>80</td>
+                        <td class="in-stock">Available</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://via.placeholder.com/50" alt="Cold Coffee icon"></td>
+                        <td>Cold Coffee</td>
+                        <td>50</td>
+                        <td class="in-stock">Available</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://via.placeholder.com/50" alt="Grilled Sandwich icon"></td>
+                        <td>Grilled Sandwich</td>
+                        <td>60</td>
+                        <td class="out-of-stock">Sold Out</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Sketch Pre-Ordering System.</p>
+    </footer>
+</body>
+</html>

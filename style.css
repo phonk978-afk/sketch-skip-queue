@@ -1,0 +1,190 @@
+/* Universal Selector */
+* {
+    box-sizing: border-box; /* Includes padding and border in width/height calculation */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 20px; /* Padding creates space inside the header */
+    text-align: center;
+    border-bottom: 5px solid #e8491d; /* Border at the bottom of header */
+}
+
+/* Descendant selector & Element selector */
+header nav ul {
+    list-style-type: none;
+    margin-top: 15px; /* Margin pushes elements away (outside) */
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Pseudo-class :hover and specific class */
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto; /* Centering the main container using auto margin */
+}
+
+/* --- THE BOX MODEL DEMONSTRATION --- */
+/* Your sir will definitely ask about this! */
+.box-model-demo {
+    /* 1. Content Area: The background color sits under the content and padding */
+    background-color: #ffffff;
+    
+    /* 2. Padding: Space INSIDE the border, pushing the text inward */
+    padding: 20px; 
+    
+    /* 3. Border: The line wrapping around the padding */
+    border: 4px dashed #e8491d; 
+    
+    /* 4. Margin: Space OUTSIDE the border, pushing the box away from the table */
+    margin-top: 20px;
+    margin-bottom: 40px; 
+    
+    text-align: center;
+}
+
+.promo-image {
+    margin: 15px 0;
+    border: 2px solid #ccc;
+    padding: 5px; /* Adds a little white frame inside the border */
+}
+
+/* External Link Styling using Attribute Selector */
+a[target="_blank"] {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+/* --- HTML TABLE STYLING --- */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Merges adjacent borders into a single line */
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Example of a bottom border */
+}
+
+th {
+    background-color: #35424a;
+    color: white;
+}
+
+/* Pseudo-class :nth-child for zebra striping rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Pseudo-class :hover */
+tr:hover {
+    background-color: #ddd; 
+}
+
+.in-stock {
+    color: green;
+    font-weight: bold;
+}
+
+.out-of-stock {
+    color: red;
+    font-style: italic; 
+}
+
+/* --- HTML FORM STYLING --- */
+.form-section {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ccc; /* Border around the entire form */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Margin pushes the next input down */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Attribute selector for inputs */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px; /* Padding makes the inside of the text box larger */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Pseudo-class :focus (when user clicks into the text box) */
+input[type="text"]:focus,
+select:focus {
+    border-color: #e8491d;
+    outline: none; 
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input {
+    margin-right: 10px; /* Margin between checkbox and label */
+}
+
+.submit-btn {
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #35424a; /* Hover changes color */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
