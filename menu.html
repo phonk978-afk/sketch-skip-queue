@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — QuickBite Campus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 2v8M4 2v5a3 3 0 0 0 6 0V2M17 2c-2.2 0-4 2.5-4 6s1.8 6 4 6M17 2v20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      QuickBite Campus
+    </a>
+    <nav class="main-nav" style="margin-left:0;">
+      <a href="menu.html" class="active">Menu</a>
+      <a href="orders.html">Orders</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="header-search" style="margin-left:auto;">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="text" placeholder="Search menu…" aria-label="Search menu">
+    </div>
+    <div class="avatar">RP</div>
+  </div>
+</header>
+
+<main class="wrap menu-page">
+
+  <div class="slot-banner">
+    <div class="slot-banner-left">
+      <span class="slot-icon">⏱</span>
+      <div>
+        <p class="slot-title">Next pickup slot: 12:15–12:30</p>
+        <p class="slot-sub">8 spots left</p>
+      </div>
+    </div>
+    <a href="#" class="eyebrow-link">Change Slot ›</a>
+  </div>
+
+  <div class="filter-row" role="tablist" aria-label="Menu categories">
+    <button class="filter-chip active" role="tab" aria-selected="true">All</button>
+    <button class="filter-chip" role="tab" aria-selected="false">Snacks</button>
+    <button class="filter-chip" role="tab" aria-selected="false">Meals</button>
+    <button class="filter-chip" role="tab" aria-selected="false">Beverages</button>
+    <button class="filter-chip" role="tab" aria-selected="false">Desserts</button>
+  </div>
+
+  <div class="dish-grid">
+
+    <article class="dish-card">
+      <div class="dish-img-wrap">
+        <img src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500&q=80" alt="Chapati combo with veg curry and salad">
+        <span class="badge badge-tag-overlay">Popular</span>
+      </div>
+      <div class="dish-body">
+        <p class="dish-name">Chapati Combo</p>
+        <p class="dish-desc">4 chapati with veg curry and salad (380 kcal).</p>
+        <div class="dish-foot">
+          <span class="price">₹55</span>
+          <button class="add-btn" aria-label="Add Chapati Combo">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish-card">
+      <div class="dish-img-wrap">
+        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500&q=80" alt="Grilled paneer sandwich cut into triangles">
+        <span class="badge badge-tag-overlay">Gluten-Free</span>
+      </div>
+      <div class="dish-body">
+        <p class="dish-name">Grilled Paneer Sandwich</p>
+        <p class="dish-desc">Paneer, veggies, and sauces grilled in bread (400 kcal).</p>
+        <div class="dish-foot">
+          <span class="price">₹78</span>
+          <button class="add-btn" aria-label="Add Grilled Paneer Sandwich">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish-card">
+      <div class="dish-img-wrap">
+        <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?w=500&q=80" alt="Steamed veg momos with dips">
+      </div>
+      <div class="dish-body">
+        <p class="dish-name">Veg Momos (6pcs)</p>
+        <p class="dish-desc">Steamed dumplings filled with spiced veggies (300 kcal).</p>
+        <div class="dish-foot">
+          <span class="price">₹78</span>
+          <div class="qty-stepper">
+            <button aria-label="Decrease quantity">–</button>
+            <span>2</span>
+            <button aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish-card">
+      <div class="dish-img-wrap">
+        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&q=80" alt="French fries in a paper cone with ketchup">
+        <span class="badge badge-tag-overlay">Vegan</span>
+      </div>
+      <div class="dish-body">
+        <p class="dish-name">French Fries</p>
+        <p class="dish-desc">Classic, crispy and salted (320 kcal).</p>
+        <div class="dish-foot">
+          <span class="price">₹58</span>
+          <button class="add-btn" aria-label="Add French Fries">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish-card">
+      <div class="dish-img-wrap">
+        <img src="https://images.unsplash.com/photo-1600628421066-f6bda6a7b976?w=500&q=80" alt="Cold coffee in a tall glass">
+      </div>
+      <div class="dish-body">
+        <p class="dish-name">Cold Coffee</p>
+        <p class="dish-desc">Chilled, blended with ice cream (220 kcal).</p>
+        <div class="dish-foot">
+          <span class="price">₹65</span>
+          <button class="add-btn" aria-label="Add Cold Coffee">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish-card">
+      <div class="dish-img-wrap">
+        <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&q=80" alt="Masala chai in a kulhad cup">
+        <span class="badge badge-tag-overlay">Healthy</span>
+      </div>
+      <div class="dish-body">
+        <p class="dish-name">Masala Chai</p>
+        <p class="dish-desc">Hot spiced tea, brewed fresh (90 kcal).</p>
+        <div class="dish-foot">
+          <span class="price">₹20</span>
+          <button class="add-btn" aria-label="Add Masala Chai">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish-card">
+      <div class="dish-img-wrap">
+        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=500&q=80" alt="Gulab jamun dessert in syrup">
+      </div>
+      <div class="dish-body">
+        <p class="dish-name">Gulab Jamun (2pcs)</p>
+        <p class="dish-desc">Soft milk dumplings soaked in sugar syrup (250 kcal).</p>
+        <div class="dish-foot">
+          <span class="price">₹35</span>
+          <button class="add-btn" aria-label="Add Gulab Jamun">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish-card">
+      <div class="dish-img-wrap">
+        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=500&q=80" alt="Chicken wrap sliced in half">
+      </div>
+      <div class="dish-body">
+        <p class="dish-name">Chicken Wrap</p>
+        <p class="dish-desc">Grilled chicken, veggies and mayo in a tortilla (430 kcal).</p>
+        <div class="dish-foot">
+          <span class="price">₹85</span>
+          <button class="add-btn" aria-label="Add Chicken Wrap">+</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer class="site-footer" style="margin-top:100px;">
+  <div class="wrap">
+    <div>
+      <p class="brand" style="font-size:17px;">QuickBite Campus</p>
+      <p class="footer-copy">© 2024 QuickBite Campus. All Rights Reserved.</p>
+    </div>
+    <nav class="footer-links">
+      <a href="#">University Portal</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Support</a>
+      <a href="#">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- Sticky cart bar -->
+<div class="cart-bar">
+  <div class="cart-bar-inner wrap">
+    <div class="cart-bar-left">
+      <span class="cart-badge">2</span>
+      <div>
+        <p class="cart-count">Total (2 items)</p>
+        <p class="cart-total">₹156</p>
+      </div>
+    </div>
+    <a href="checkout.html" class="btn btn-primary">Pay Now →</a>
+  </div>
+</div>
+
+</body>
+</html>

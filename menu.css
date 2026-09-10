@@ -1,0 +1,282 @@
+/* ==========================================================================
+   QuickBite Campus — Menu page styles
+   Color palette used:
+     Orange (primary/accent) ......... #C1440E
+     Orange dark (hover/active) ...... #A23A0C
+     Orange light (soft backgrounds).. #FCE9DC
+     Ink (headings/body text) ........ #1F1B18
+     Ink soft (secondary text) ....... #5B5450
+     Line (borders) .................. #E7E1DA
+     White ............................ #FFFFFF
+     Background soft ................. #F6F3EF
+     Background panel ................ #FAF8F5
+     Danger (late/cancel) ............ #C0392B
+   ========================================================================== */
+
+.menu-page { padding: 32px 32px 140px; }
+
+/* ---------- Slot banner ---------- */
+
+.slot-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FAF8F5;
+  border: 1px solid #E7E1DA;
+  border-radius: 16px;
+  padding: 16px 22px;
+  margin-bottom: 24px;
+}
+
+.slot-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.slot-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #FCE9DC;
+  color: #A23A0C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex: none;
+}
+
+.slot-title {
+  font-weight: 600;
+  font-size: 14.5px;
+  margin: 0;
+  color: #1F1B18;
+}
+
+.slot-sub {
+  font-size: 12.5px;
+  color: #5B5450;
+  margin: 2px 0 0;
+}
+
+/* ---------- Filter chips ---------- */
+
+.filter-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  border: 1px solid #E7E1DA;
+  background: #FFFFFF;
+  color: #5B5450;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 999px;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.filter-chip:hover { border-color: #C1440E; color: #1F1B18; }
+
+.filter-chip.active {
+  background: #C1440E;
+  color: #FFFFFF;
+  border-color: #C1440E;
+}
+
+/* ---------- Dish grid ---------- */
+
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.dish-card {
+  border: 1px solid #E7E1DA;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #FFFFFF;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.dish-card:hover {
+  box-shadow: 0 1px 2px rgba(31, 27, 24, 0.06), 0 8px 24px rgba(31, 27, 24, 0.05);
+  transform: translateY(-2px);
+}
+
+.dish-img-wrap {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.dish-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.badge-tag-overlay {
+  top: 10px;
+  left: 10px;
+  background: rgba(31,27,24,0.85);
+  color: #FFFFFF;
+}
+
+.dish-body { padding: 14px 16px 16px; }
+
+.dish-name {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 0 4px;
+  color: #1F1B18;
+}
+
+.dish-desc {
+  font-size: 13px;
+  color: #5B5450;
+  margin: 0 0 12px;
+  min-height: 34px;
+  line-height: 1.4;
+}
+
+.dish-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 16px;
+  color: #C1440E;
+}
+
+.add-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: #FCE9DC;
+  color: #A23A0C;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease;
+}
+
+.add-btn:hover { background: #C1440E; color: #FFFFFF; }
+
+.qty-stepper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #FCE9DC;
+  border-radius: 999px;
+  padding: 4px 6px;
+}
+
+.qty-stepper button {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: #FFFFFF;
+  color: #A23A0C;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-stepper span {
+  font-weight: 700;
+  font-size: 14px;
+  min-width: 12px;
+  text-align: center;
+  color: #1F1B18;
+}
+
+/* ---------- Sticky cart bar ---------- */
+
+.cart-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1F1B18;
+  z-index: 50;
+  box-shadow: 0 -8px 24px rgba(0,0,0,0.15);
+}
+
+.cart-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+
+.cart-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #FFFFFF;
+}
+
+.cart-badge {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #C1440E;
+  color: #FFFFFF;
+  font-size: 12.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-count {
+  font-size: 12px;
+  color: #C9C3BC;
+  margin: 0;
+}
+
+.cart-total {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 2px 0 0;
+  color: #FFFFFF;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 980px) {
+  .dish-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .main-nav { display: none; }
+  .header-search { display: none; }
+  .dish-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .menu-page { padding: 20px 16px 140px; }
+  .slot-banner { flex-wrap: wrap; gap: 10px; }
+}
