@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Active Shift — QuickBite Campus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      🍴 QuickBite Campus
+    </a>
+    <nav class="main-nav" style="margin-left:40px;">
+      <a href="menu.html">Menu</a>
+      <a href="orders.html" class="active">Orders</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="header-search" style="margin-left:auto;">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="text" placeholder="Search orders…" aria-label="Search orders">
+    </div>
+    <div class="avatar">SK</div>
+  </div>
+</header>
+
+<main class="wrap shift-page">
+
+  <div class="shift-header">
+    <div>
+      <h1>Active Shift</h1>
+      <p class="shift-sub">Current Slot: <strong>12:15 PM – 12:30 PM</strong></p>
+    </div>
+    <div class="stat-cards">
+      <div class="stat-card">
+        <p class="stat-label">Pending</p>
+        <p class="stat-value">24</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label">Capacity</p>
+        <p class="stat-value">36 / 60</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="shift-grid">
+
+    <section class="pickup-col">
+      <h2 class="col-title">Imminent Pickups <span>(Next 15m)</span></h2>
+
+      <article class="order-card">
+        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=140&q=80" alt="Paneer paratha" class="order-thumb-lg">
+        <div class="order-card-body">
+          <div class="order-card-top">
+            <div>
+              <span class="order-id">#407</span>
+              <p class="order-dish">Paneer Paratha</p>
+            </div>
+            <span class="time-badge">11:35 AM</span>
+          </div>
+          <p class="order-student">Student: Tanuj Rathi</p>
+          <div class="order-notes">
+            <span class="note-chip">No Curd</span>
+            <span class="note-chip">Extra Pickles</span>
+          </div>
+          <div class="order-card-actions">
+            <button class="btn btn-primary btn-sm">✓ Mark as Ready</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="order-card late">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=140&q=80" alt="Bread omelette with coffee" class="order-thumb-lg">
+        <div class="order-card-body">
+          <div class="order-card-top">
+            <div>
+              <span class="order-id">#406</span>
+              <p class="order-dish">Bread Omelette</p>
+            </div>
+            <span class="time-badge time-badge-late">LATE – 11:30 AM</span>
+          </div>
+          <p class="order-student">Student: Tamish Mehlawat</p>
+          <div class="order-notes">
+            <span class="note-chip">Toasted bread omelette</span>
+          </div>
+          <div class="order-card-actions">
+            <button class="btn btn-outline-danger btn-sm">Cancel</button>
+            <button class="btn btn-primary btn-sm">✓ Mark as Ready</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <aside class="next-slot-col">
+      <div class="next-slot-card">
+        <div class="next-slot-head">
+          <h2 class="col-title">Next Slot: 12:15 PM</h2>
+        </div>
+        <div class="prep-summary">
+          <span>12 Orders Prep</span>
+          <span class="starts-badge">Starts in 8m</span>
+        </div>
+        <ul class="prep-list">
+          <li><span class="prep-id">#409</span> Veg momos</li>
+          <li><span class="prep-id">#410</span> Chicken Wrap</li>
+          <li><span class="prep-id">#411</span> Coke</li>
+          <li><span class="prep-id">#412</span> White sauce pasta</li>
+        </ul>
+        <a href="#" class="eyebrow-link view-all-link">View All Upcoming</a>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <p class="brand" style="font-size:17px;">QuickBite Campus</p>
+      <p class="footer-copy">© 2024 QuickBite Campus. All Rights Reserved.</p>
+    </div>
+    <nav class="footer-links">
+      <a href="#">University Portal</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Support</a>
+      <a href="#">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
