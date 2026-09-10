@@ -1,73 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Sketch - Menu</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickBite Campus — Skip the Canteen Queue</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to The Sketch Express</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Menu</a></li>
-                <li><a href="order.html">Pre-Order Now</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Demonstrating Box Model for Evaluation -->
-        <div class="box-model-demo">
-            <h2>Special of the Day</h2>
-            <!-- Image with 'alt' attribute as required -->
-            <img src="https://via.placeholder.com/150" alt="Delicious sketch burger meal promotion" class="promo-image">
-            <p>Try our signature Sketch Burger. It's the most popular item!</p>
-            
-            <!-- External link example using target="_blank" -->
-            <p>Read about healthy eating on <a href="https://en.wikipedia.org/wiki/Healthy_diet" target="_blank">Wikipedia</a>.</p>
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 2v8M4 2v5a3 3 0 0 0 6 0V2M17 2c-2.2 0-4 2.5-4 6s1.8 6 4 6M17 2v20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      QuickBite Campus
+    </a>
+    <div class="header-search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="text" placeholder="Search menu…" aria-label="Search menu">
+    </div>
+    <nav class="main-nav">
+      <a href="menu.html">Menu</a>
+      <a href="orders.html">Orders</a>
+      <a href="#about">About</a>
+      <a href="login.html">Sign In</a>
+    </nav>
+    <div class="avatar"></div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>Skip the Canteen Queue</h1>
+        <p class="hero-sub">Order ahead and pay online for a seamless campus dining experience. Grab your food and go, zero waiting time.</p>
+        <div class="hero-actions">
+          <a href="menu.html" class="btn btn-primary">Order Now →</a>
+          <a href="#how-it-works" class="btn btn-ghost">Get Started</a>
         </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <span class="hero-card-brand">QuickBite Campus</span>
+          <span class="hero-card-nav"></span>
+        </div>
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80" alt="Grain bowl with grilled chicken, avocado, tomatoes and quinoa on a wooden table" class="hero-card-img">
+        <div class="hero-card-footer">
+          <p class="hero-card-title">The Campus Power Bowl</p>
+          <p class="hero-card-meta">₹150 &nbsp;|&nbsp; 760 cal &nbsp;|&nbsp; ★ 4.8</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section class="menu-section">
-            <h2>Our Menu</h2>
-            <!-- HTML Table as required by syllabus -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>Item Image</th>
-                        <th>Item Name</th>
-                        <th>Price (₹)</th>
-                        <th>Availability</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <!-- Images with 'alt' attribute -->
-                        <td><img src="https://via.placeholder.com/50" alt="Sketch Burger icon"></td>
-                        <td>Sketch Burger</td>
-                        <td>80</td>
-                        <td class="in-stock">Available</td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://via.placeholder.com/50" alt="Cold Coffee icon"></td>
-                        <td>Cold Coffee</td>
-                        <td>50</td>
-                        <td class="in-stock">Available</td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://via.placeholder.com/50" alt="Grilled Sandwich icon"></td>
-                        <td>Grilled Sandwich</td>
-                        <td>60</td>
-                        <td class="out-of-stock">Sold Out</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
+  <!-- Features -->
+  <section class="features" id="how-it-works">
+    <div class="wrap features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⏱</div>
+        <h3>Pre-order in seconds</h3>
+        <p>Browse the daily menu and customize your meal with just a few taps between classes.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💳</div>
+        <h3>Pay online, skip the line</h3>
+        <p>Secure, cashless transactions. Just show your digital receipt at the pick-up counter.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h3>Live order status</h3>
+        <p>Get notified the exact moment your food is ready. Perfect timing for your short breaks.</p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2026 The Sketch Pre-Ordering System.</p>
-    </footer>
+  <!-- Today's Menu -->
+  <section class="today-menu">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Today's Menu</h2>
+        <a href="menu.html" class="eyebrow-link">View all →</a>
+      </div>
+      <div class="menu-scroll">
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500&q=80" alt="Pav Bhaji with buttered pav">
+            <span class="badge badge-rating">★ 4.8</span>
+          </div>
+          <div class="dish-body">
+            <p class="dish-name">Pav Bhaji</p>
+            <p class="dish-desc">Buttery bhaji with 2 pav + onion, lemon (400 kcal).</p>
+            <span class="tag">Popular</span>
+            <div class="dish-foot">
+              <span class="price">₹52</span>
+              <button class="add-btn" aria-label="Add Pav Bhaji">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=500&q=80" alt="Egg curry with boiled eggs in spiced gravy">
+            <span class="badge badge-tag-overlay">Vegan</span>
+          </div>
+          <div class="dish-body">
+            <p class="dish-name">Egg Curry</p>
+            <p class="dish-desc">Medium spiced home style curry (250 kcal).</p>
+            <span class="tag">Healthy</span>
+            <div class="dish-foot">
+              <span class="price">₹47</span>
+              <button class="add-btn" aria-label="Add Egg Curry">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500&q=80" alt="Mutton curry combo served with rice and chapati">
+          </div>
+          <div class="dish-body">
+            <p class="dish-name">Mutton Curry Combo</p>
+            <p class="dish-desc">Mutton curry served with rice or chapati (750 kcal).</p>
+            <div class="dish-foot">
+              <span class="price">₹195</span>
+              <button class="add-btn" aria-label="Add Mutton Curry Combo">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&q=80" alt="Idli sambar plate">
+          </div>
+          <div class="dish-body">
+            <p class="dish-name">Idli Sambar</p>
+            <p class="dish-desc">Soft rice idlis with sambar and chutney (280 kcal).</p>
+            <div class="dish-foot">
+              <span class="price">₹47</span>
+              <button class="add-btn" aria-label="Add Idli Sambar">+</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <p class="brand" style="font-size:17px;">QuickBite Campus</p>
+      <p class="footer-copy">© 2024 QuickBite Campus. All Rights Reserved.</p>
+    </div>
+    <nav class="footer-links">
+      <a href="#">University Portal</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Support</a>
+      <a href="#">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>
