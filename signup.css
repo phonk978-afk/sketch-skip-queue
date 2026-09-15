@@ -1,0 +1,298 @@
+/* ==========================================================================
+   QuickBite Campus — Create Account page styles
+   Color palette used:
+     #C1440E  — primary orange (submit button, checkbox, checked terms, links)
+     #A23A0C  — orange dark (icon color)
+     #FCE9DC  — orange light (icon background, info banner background)
+     #1F1B18  — ink (headings, input text, field labels)
+     #5B5450  — ink soft (subtext, secondary labels, hints)
+     #E7E1DA  — line (borders, divider)
+     #FFFFFF  — white (card background, input background, checkmark)
+     #F6F3EF  — background soft (page background behind the card)
+     #A8A099  — placeholder text
+     #8A837D  — field hint text
+     #2E7D46  — success green (password check passed)
+   ========================================================================== */
+
+.signup-page {
+    min-height: calc(100vh - 73px - 130px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F6F3EF;
+    padding: 56px 20px;
+}
+
+.signup-card {
+    width: 100%;
+    max-width: 440px;
+    background: #FFFFFF;
+    border: 1px solid #E7E1DA;
+    border-radius: 16px;
+    box-shadow: 0 1px 2px rgba(31, 27, 24, 0.06), 0 8px 24px rgba(31, 27, 24, 0.05);
+    padding: 36px 34px 32px;
+}
+
+.signup-head {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.signup-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #FCE9DC;
+    color: #A23A0C;
+    margin-bottom: 16px;
+}
+
+.signup-head h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #1F1B18;
+}
+
+.signup-sub {
+    font-size: 13.5px;
+    color: #5B5450;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* ---------- SSO button ---------- */
+
+.sso-btn {
+    font-size: 14px;
+    padding: 12px 0;
+    margin-top: 22px;
+}
+
+
+/* ---------- Divider ---------- */
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 22px 0;
+    color: #8A837D;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #E7E1DA;
+}
+
+.divider span {
+    padding: 0 12px;
+    white-space: nowrap;
+}
+
+
+/* ---------- Form fields ---------- */
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.field-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1F1B18;
+}
+
+.input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #E7E1DA;
+    border-radius: 10px;
+    padding: 11px 14px;
+    background: #FFFFFF;
+    transition: border-color 0.15s ease;
+}
+
+.input-wrap:focus-within {
+    border-color: #C1440E;
+}
+
+.input-wrap svg {
+    flex: none;
+    color: #5B5450;
+}
+
+.input-wrap input {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+    background: none;
+    color: #1F1B18;
+    min-width: 0;
+}
+
+.input-wrap input::placeholder {
+    color: #A8A099;
+}
+
+.toggle-visibility {
+    border: none;
+    background: none;
+    color: #5B5450;
+    display: flex;
+    padding: 0;
+    flex: none;
+}
+
+.field-hint {
+    font-size: 11.5px;
+    color: #8A837D;
+}
+
+
+/* ---------- Info banner ---------- */
+
+.info-banner {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: #FCE9DC;
+    color: #A23A0C;
+    font-size: 12.5px;
+    line-height: 1.5;
+    padding: 12px 14px;
+    border-radius: 10px;
+}
+
+.info-banner svg {
+    flex: none;
+    margin-top: 1px;
+}
+
+
+/* ---------- Password checks ---------- */
+
+.password-checks {
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.check-ok {
+    color: #2E7D46;
+    font-weight: 600;
+}
+
+.check-pending {
+    color: #8A837D;
+}
+
+
+/* ---------- Terms checkbox ---------- */
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: #5B5450;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox-box {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 1.5px solid #E7E1DA;
+    position: relative;
+    flex: none;
+    margin-top: 1px;
+}
+
+.checkbox input:checked+.checkbox-box {
+    background: #C1440E;
+    border-color: #C1440E;
+}
+
+.checkbox input:checked+.checkbox-box::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 9px;
+    border: solid #FFFFFF;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.terms-checkbox a {
+    color: #C1440E;
+    font-weight: 600;
+}
+
+.signup-submit {
+    margin-top: 4px;
+    padding: 13px 0;
+    font-size: 15px;
+}
+
+.signin-note {
+    text-align: center;
+    font-size: 13px;
+    color: #5B5450;
+    margin: 22px 0 0;
+}
+
+.signin-note a {
+    color: #C1440E;
+    font-weight: 600;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 640px) {
+    .main-nav {
+        display: none;
+    }
+    .signup-card {
+        padding: 30px 22px 26px;
+    }
+    .field-row-2 {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
