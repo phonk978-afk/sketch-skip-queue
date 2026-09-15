@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account — QuickBite Campus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="wrap">
+            <a href="index.html" class="brand">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 2v8M4 2v5a3 3 0 0 0 6 0V2M17 2c-2.2 0-4 2.5-4 6s1.8 6 4 6M17 2v20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> QuickBite Campus
+            </a>
+            <nav class="main-nav" style="margin-left:auto;">
+                <a href="menu.html">Menu</a>
+                <a href="orders.html">Orders</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Sign In</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="signup-page">
+        <div class="signup-card">
+
+            <div class="signup-head">
+                <span class="signup-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M19 8v6M22 11h-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </span>
+                <h1>Create your account</h1>
+                <p class="signup-sub">Register with your official BMU ID to unlock fast canteen pickup and student meal wallets.</p>
+            </div>
+
+            <button type="button" class="btn btn-ghost btn-block sso-btn">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 8h18M8 4v4" stroke="currentColor" stroke-width="1.8"/></svg>
+      Auto-fill via Maitri BMU
+    </button>
+
+            <div class="divider"><span>OR REGISTER MANUALLY</span></div>
+
+            <form class="signup-form" action="#" method="post">
+
+                <label class="field">
+        <span class="field-label">Full Name</span>
+        <div class="input-wrap">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M4 20c0-3.3 3.6-6 8-6s8 2.7 8 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input type="text" name="fullname" placeholder="e.g. Anant Yadav" autocomplete="name" required>
+        </div>
+      </label>
+
+                <label class="field">
+        <span class="field-label">BMU Student Email ID</span>
+        <div class="input-wrap">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="4.5" width="19" height="15" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="m3 6 9 7 9-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input type="email" name="email" placeholder="firstname.lastname.25cse@bmu.edu.in" autocomplete="email" required>
+        </div>
+        <span class="field-hint">Must end with official @bmu.edu.in domain.</span>
+      </label>
+
+                <div class="field-row-2">
+                    <label class="field">
+          <span class="field-label">Roll / Enrollment No</span>
+          <div class="input-wrap">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M7 9h10M7 13h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <input type="text" name="rollno" placeholder="250398" required>
+          </div>
+        </label>
+
+                    <label class="field">
+          <span class="field-label">Department / School</span>
+          <div class="input-wrap">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 3 2 8l10 5 10-5-10-5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5" stroke="currentColor" stroke-width="1.8"/></svg>
+            <input type="text" name="department" placeholder="SOET (Engg)" required>
+          </div>
+        </label>
+                </div>
+
+                <div class="info-banner">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v.01M12 11v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>                    Instant validation active for all BMU campus students &amp; hostelers.
+                </div>
+
+                <label class="field">
+        <span class="field-label">Create Password</span>
+        <div class="input-wrap">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="4" y="10" width="16" height="10" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.8"/></svg>
+          <input type="password" name="password" placeholder="Minimum 8 characters" autocomplete="new-password" required>
+          <button type="button" class="toggle-visibility" aria-label="Show password">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+        </div>
+        <div class="password-checks">
+          <span class="check-ok">✓ 8+ chars</span>
+          <span class="check-pending">○ 1 number/special</span>
+        </div>
+      </label>
+
+                <label class="checkbox terms-checkbox">
+        <input type="checkbox" name="terms" checked required>
+        <span class="checkbox-box"></span>
+        <span>I agree to QuickBite Campus <a href="#">Terms of Service</a> &amp; canteen pre-order cancellation policies.</span>
+      </label>
+
+                <button type="submit" class="btn btn-primary btn-block signup-submit">Create Student Account →</button>
+
+            </form>
+
+            <p class="signin-note">Already have a QuickBite account? <a href="login.html">Sign In</a></p>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div>
+                <p class="brand" style="font-size:17px;">QuickBite Campus</p>
+                <p class="footer-copy">© 2024 QuickBite Campus. All Rights Reserved.</p>
+            </div>
+            <nav class="footer-links">
+                <a href="#">University Portal</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact Support</a>
+                <a href="#">Terms of Service</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>
